@@ -1,0 +1,17 @@
+{
+  "type": "mongodb",
+  "host": "localhost",
+  "port": 27017,
+  "database": "test_typeorm",
+  "synchronize": true,
+  "username": "",
+  "password": "",
+  "logging": false,
+  "autoReconnect": true,
+  "entities": [
+    "dest/app/entity/*.js"
+  ],
+  "cli": {
+    "entitiesDir": "dest/app/entity"
+  }
+}

@@ -1,0 +1,10 @@
+import {Post, Get, Body, JsonController, UseAfter} from 'routing-controllers';
+import {EventStoreHandler} from '../middleware/EventStoreHandler';
+
+@JsonController("/{pascalName}")
+@UseAfter(EventStoreHandler)
+class {pascalName}Controller {
+    
+}
+Object.seal({pascalName}Controller);
+export default {pascalName}Controller;
