@@ -2,7 +2,7 @@ import {getCustomRepository} from 'typeorm';
 import {pascalName}Repository from '../repository/{pascalName}Repository';
 
 class {pascalName}Business{
-    private internalRepository = getCustomRepository({pascalName}Repository);
+    private {pascalName}Repository = getCustomRepository({pascalName}Repository);
     private static _instance: {pascalName}Business;
 
     constructor(){

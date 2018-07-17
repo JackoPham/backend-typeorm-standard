@@ -4,6 +4,12 @@ import {EventStoreHandler} from '../middleware/EventStoreHandler';
 @JsonController("/{pascalName}")
 @UseAfter(EventStoreHandler)
 class {pascalName}Controller {
+
+    @Post("/create")
+    async create(@Body() user: any): Promise<any> {
+        //let data = await UserBusiness.instance.create(user);
+        //return data;
+    }
     
 }
 Object.seal({pascalName}Controller);

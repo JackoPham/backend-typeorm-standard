@@ -1,15 +1,10 @@
-import {Entity, Column, BaseEntity, ObjectIdColumn, CreateDateColumn} from 'typeorm';
+import {Entity, Column, ObjectIdColumn, CreateDateColumn} from 'typeorm';
 import * as moment from 'moment';
+import BaseModel from '../model/common/interfaces/IBaseModel';
+
 @Entity()
-export class {pascalName} extends BaseEntity {
+export class {pascalName} extends BaseModel {
     @ObjectIdColumn()
     id: string;
 
-    @CreateDateColumn()
-    createdDate: Date;
-
-    constructor() {
-        super();
-        this.createdDate = moment().utc().toDate();
-    }
 }
