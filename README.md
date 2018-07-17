@@ -10,6 +10,10 @@ TODO: Guide users through getting your code up and running on their own system. 
 
 # Build and Test
 TODO: Describe and show how to build your code and run the tests. 
++ npm run build
++ npm run test
++ npm start
++ npm run watch
 
 # Contribute
 TODO: Explain how other users and developers can contribute to make your code better. 
